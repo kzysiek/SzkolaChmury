@@ -1,0 +1,20 @@
+{
+    "policyRule": {
+        "if": {
+            "allOf": [{
+                    "field": "type",
+                    "equals": "Microsoft.Network/virtualNetworks"
+                },
+                {
+                    "not": {
+                        "field": "name",
+                        "match": "???-vnet-???-##"
+                    }
+                }
+            ]
+        },
+        "then": {
+            "effect": "audit"
+        }
+    }
+}

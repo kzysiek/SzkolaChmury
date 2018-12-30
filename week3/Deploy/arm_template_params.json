@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworkName": {
+            "value": "chm-vnet-dev-01"
+        },
+        "subnetName1": {
+            "value": "chm-subnet-dev-01"
+        },
+        "subnetName2": {
+            "value": "chm-subnet-dev-02"
+        },
+        "subnetPrefix1": {
+            "value": "10.0.1.0/24"
+        },
+        "subnetPrefix2": {
+            "value": "10.0.2.0/24"
+        },
+        "networkInterfaceName1": {
+            "value": "chm-nic-dev-01"
+        },
+        "networkInterfaceName2": {
+            "value": "chm-nic-dev-02"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/20"
+        },
+        "virtualMachineName1": {
+            "value": "chm-vm-dev-01"
+        },
+        "virtualMachineName2": {
+            "value": "chm-vm-dev-02"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "adminUsername": {
+            "value": "test"
+        },
+        "adminPassword": {
+            "value": "P4ssw0rd!"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "policyRule": {
+        "if": {
+            "allOf": [{
+                    "field": "type",
+                    "equals": "Microsoft.Storage/storageAccounts"
+                },
+                {
+                    "not": {
+                        "field": "name",
+                        "match": "???-storage-???-##"
+                    }
+                }
+            ]
+        },
+        "then": {
+            "effect": "audit"
+        }
+    }
+}
